@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparative Ecology of Cities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .publication-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .publication-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .person-card {
+            transition: transform 0.2s;
+        }
+        .person-card:hover {
+            transform: scale(1.02);
+        }
+        /* Added hero background and navigation styles */
+        .hero-section {
+            background-image: url('/images/image.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+            position: relative;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%);
+            position: absolute;
+            inset: 0;
+        }
+        .nav-link {
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .nav-link:hover {
+            opacity: 0.7;
+        }
+        .nav-link.active {
+            font-weight: 600;
+        }
+        .section-content {
+            display: none;
+        }
+        .section-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- New navigation bar with project name and centered menu -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <h1 class="text-xl font-semibold text-gray-900">Comparative Ecology of Cities</h1>
+            <div class="flex items-center gap-8">
+                <span class="nav-link active text-gray-900" data-section="project-info">Project Information</span>
+                <span class="nav-link text-gray-600" data-section="publications">Publications</span>
+                <span class="nav-link text-gray-600" data-section="people">People</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Project Information with hero background and right-aligned text -->
+        <section id="project-info" class="section-content active">
+            <div class="hero-section">
+                <div class="hero-overlay"></div>
+                <div class="relative max-w-7xl mx-auto px-6 py-20 h-full flex items-center">
+                    <div class="ml-auto max-w-xl">
+                        <div class="text-white">
+                            <h2 class="text-4xl font-bold mb-6">Understanding Urban Ecosystems</h2>
+                            <p class="text-lg leading-relaxed mb-4">
+                                Cities are complex socio-ecological systems in which the spatial arrangement of buildings, streets, green spaces, and waterways shapes the flows of energy, materials, and people.
+                            </p>
+                            <p class="text-lg leading-relaxed">
+                                Building upon the pattern–process–function relationships, the Comparative Ecology of Cities project aims to investigate how urban form influences social and ecological functions, and to translate these insights into evidence-based strategies for urban policy and design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 py-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Project Overview</h3>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    The Comparative Ecology of Cities project is a research initiative under the Future Cities Laboratory at the Singapore-ETH Centre, bringing together an interdisciplinary team spanning ecology, environmental engineering, urban planning, and socio-economic research.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Using remote sensing and spatial datasets to characterise the urban form of more than 100 cities, the project combines socio-ecological theory, climate and flood modelling, and machine learning to quantify the impacts of urban form across five domains, namely biodiversity, climate and energy, flooding, health, and socioeconomics. The project reveals universal principles while recognising the unique characteristics of each urban environment, and suggests place-based strategies to support sustainable urban development.
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section-content">
+            <div class="max-w-7xl mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10">Publications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Publication 1 -->
+                    <a href="https://doi.org/10.1016/j.scitotenv.2024.176139" target="_blank" class="publication-card block bg-white border border-gray-200 rounded-lg overflow-hidden cursor-pointer">
+                        <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=192&width=384" alt="Publication 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Investigating the influence of urban morphology on pluvial flooding: Insights from urban catchments in England (UK)</h3>
+                            <p class="text-sm text-gray-600">Science of The Total Environment, 2024</p>
+                        </div>
+                    </a>
+
+                    <!-- Publication 2 -->
+                    <a href="https://doi.org/10.1029/2024MS004590" target="_blank" class="publication-card block bg-white border border-gray-200 rounded-lg overflow-hidden cursor-pointer">
+                        <div class="h-48 bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=192&width=384" alt="Publication 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Modeling the effect of trees on energy demand for indoor cooling and dehumidification across cities and climates</h3>
+                            <p class="text-sm text-gray-600">Journal of Advances in Modeling Earth Systems, 2025</p>
+                        </div>
+                    </a>
+
+                    <!-- Publication 3 -->
+                    <a href="https://doi.org/10.1016/S2542-5196(25)00022-1" target="_blank" class="publication-card block bg-white border border-gray-200 rounded-lg overflow-hidden cursor-pointer">
+                        <div class="h-48 bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=192&width=384" alt="Publication 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Residential tree canopy configuration and mortality in 6 million Swiss adults: a longitudinal study</h3>
+                            <p class="text-sm text-gray-600">The Lancet Planetary Health, 2025</p>
+                        </div>
+                    </a>
+
+                    <!-- Publication 4 -->
+                    <a href="https://doi.org/10.1038/s42949-025-00282-0" target="_blank" class="publication-card block bg-white border border-gray-200 rounded-lg overflow-hidden cursor-pointer">
+                        <div class="h-48 bg-gradient-to-br from-teal-100 to-teal-50 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=192&width=384" alt="Publication 4" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Influence of urban form and function on daytime-nighttime population differences and hazard risk assessments</h3>
+                            <p class="text-sm text-gray-600">npj Urban Sustainability, 2025</p>
+                        </div>
+                    </a>
+
+                    <!-- Publication 5 -->
+                    <a href="https://doi.org/10.1016/j.scs.2025.107018" target="_blank" class="publication-card block bg-white border border-gray-200 rounded-lg overflow-hidden cursor-pointer">
+                        <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center">
+                            <img src="/placeholder.svg?height=192&width=384" alt="Publication 5" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">The influence of urban morphological changes on pluvial flooding during urban expansion</h3>
+                            <p class="text-sm text-gray-600">Sustainable Cities and Society, 2025</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- People Section -->
+        <section id="people" class="section-content">
+            <div class="max-w-7xl mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10">People</h2>
+                
+                <!-- Principal Investigators -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8">Principal Investigators</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Tan Puay Yok" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Tan Puay Yok</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Tan Puay Yok is Professor in the Department of Architecture, College of Design and Engineering, National University of Singapore. He leads the Landscape Studies cluster and the Urban Ecology Lab, and is also Chief Science and Technology Officer for the National Parks Board. Trained in horticulture and plant physiology, his research examines the science, policy and practice of urban greening and built-environment ecology to improve environmental quality and societal well-being.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Paolo Burlando" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Paolo Burlando</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Paolo Burlando is Professor Emeritus in the Department of Civil, Environmental and Geomatic Engineering at ETH Zurich. His research centres on water-resources planning and management, rainfall field analysis, hydrologic extremes forecasting, global change, water resources in mountainous regions, and hydrology and ecology interactions in mountain floodplains.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Simone Fatichi" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Simone Fatichi</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Simone Fatichi is Professor in the Department of Civil and Environmental Engineering, College of Design and Engineering, National University of Singapore. His research covers hydrology, biogeosciences, and climate change-related topics addressing questions associated to global change and its impacts on vegetation functioning, water and soil resources, carbon cycle, and ecosystem services in natural and urban environments.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Project Team Members -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8">Project Team Members</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Zhang Ye" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Zhang Ye</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Zhang Ye is Associate Professor and Assistant Dean (International Relations) at the School of Architecture, Tsinghua University. His research explores urban form, social and economic activities, and the application of artificial intelligence and machine learning to human–environment interactions in urban regeneration.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Yun Hye Hwang" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Yun Hye Hwang</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Yun Hye Hwang is Associate Professor in the Department of Architecture, College of Design and Engineering, National University of Singapore. Her research focuses on landscape demands in Asian equatorial cities, sustainable landscape management, multifunctional urban green spaces, and ecological design and planning in high-density urban contexts.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Dr. Chi Dengkai" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Dr. Chi Dengkai</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Dr. Chi Dengkai is Postdoctoral Researcher and module coordinator at the Future Cities Laboratory, Singapore ETH Centre. She received her Ph.D. in Bioscience Engineering from KU Leuven. Her research integrates remote sensing, urban ecology, and environmental epidemiology to provide evidence-based information for public health solutions. Dengkai leads research in the Health domain.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Dr. Zhu Yue" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Dr. Zhu Yue</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Dr. Zhu Yue is Postdoctoral Researcher at ETH Zurich and Singapore ETH Centre. Prior to her postdoc, she completed a PhD in Architecture at the University of Cambridge, UK. Her research interests lie at the intersection of Urban Resilience and GeoAI. Yue leads research in the Hydrology and Urban Multifunctionality domains.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Qiu Yeshan" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Qiu Yeshan</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Qiu Yeshan is PhD candidate at the National University of Singapore and the Singapore ETH Centre. Her research focuses on urban biodiversity, landscape ecological patterns, and the functional relationships between urban form and ecosystem processes. Yeshan leads research in the Biodiversity domain.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Wang Jing" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Wang Jing</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Wang Jing is Researcher at the Future Cities Laboratory, Singapore-ETH Centre. She holds a Master’s degree in Urban Planning from the National University of Singapore. Her research integrates urban form, urban economics, causal inference and unsupervised learning to measure the social and environmental outcomes of spatial policies. Jing leads research within the Socioeconomics domain.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Dr. Naika Meili" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Dr. Naika Meili</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Dr. Naika Meili worked as Postdoctoral Researcher at the Future Cities Laboratory, Singapore ETH Centre. She holds a PhD in Environmental Engineering from ETH Zurich. Her research interests include urban climate, urban ecohydrology, ecosystem services, and mechanistic modelling. Naika leads research in the Climate & Energy domain.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Collaborators -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8">Collaborators</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Gabriele Manoli" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Gabriele Manoli</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Gabriele Manoli is Assistant Professor in School of Architecture, Civil and Environmental Engineering at EPFL. His research seeks to understand land–atmosphere interactions and human–natural dynamics. He integrates hydrology, ecology, and complex systems science to guide the design of sustainable, climate-responsive urban environments.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Dr. Dan Richards" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Dr. Dan Richards</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Dr. Dan Richards is a Senior Researcher and Research Priority Area Leader at the Bioeconomy Science Institute in New Zealand. His work investigates how ecosystems contribute to human well-being, using field data, remote sensing, and novel data sources to quantify ecosystem services across scales.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Jun Yang" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Jun Yang</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Jun Yang is Professor in the Department of Earth System Science at Tsinghua University. His research focuses on urban ecology under global change, including quantifying urban ecosystem structure and function, and examining relationships among biodiversity, ecosystem services, and human well-being.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Amy Hahs" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Amy Hahs</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Amy Hahs is Associate Professor in Urban Horticulture at the School of Agriculture, Food and Ecosystem Sciences, University of Melbourne. Her research investigates how urban landscapes impact local ecology. Her work spans diverse building projects that develop green, healthy cities and conserve resilient ecosystems.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Dr. Brenda Lin" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Dr. Brenda Lin</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Dr. Brenda Lin is a Research Scientist at the Commonwealth Scientific and Industrial Research Organisation (CSIRO), Australia. Her research examines how natural systems can be integrated into developed landscapes to enhance ecosystem services that support environmental quality and human well-being.
+                            </p>
+                        </div>
+
+                        <div class="person-card text-center">
+                            <div class="mb-4">
+                                <img src="/placeholder.svg?height=200&width=200" alt="Prof. Mark McDonnell" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-100">
+                            </div>
+                            <h4 class="text-xl font-medium text-gray-900 mb-2">Prof. Mark McDonnell</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Prof. Mark McDonnell is Honorary Associate Professor in the School of BioSciences at the University of Melbourne. His research spans vegetation and ecosystem change, landscape ecology, and urban ecosystem structure and function. He is known for pioneering studies on urban–rural gradients and comparative urban ecology.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Added JavaScript for dynamic section switching -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section-content');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const targetSection = this.getAttribute('data-section');
+
+                    // Update active nav link
+                    navLinks.forEach(l => {
+                        l.classList.remove('active', 'text-gray-900', 'font-semibold');
+                        l.classList.add('text-gray-600');
+                    });
+                    this.classList.add('active', 'text-gray-900');
+                    this.classList.remove('text-gray-600');
+
+                    // Show target section
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    document.getElementById(targetSection).classList.add('active');
+
+                    // Scroll to top smoothly
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
